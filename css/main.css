@@ -1,0 +1,18 @@
+.header {
+	height: 20vh;
+	background-image: url('../img/header_bg.png');
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+.fig1 {
+	position: absolute;
+	left: 65px;
+	top: 20px;
+	height: 168px;
+}
+.halo {
+	top: -5px;
+	position: absolute;
+	width: 200px;
+}
