@@ -7,12 +7,34 @@
 }
 .fig1 {
 	position: absolute;
-	left: 65px;
-	top: 20px;
-	height: 168px;
+	left: 4.5vw;
+	top: 2.5vh;
+	height: 20vh;
 }
 .halo {
-	top: -5px;
+	top: -1vh;
 	position: absolute;
-	width: 200px;
+	width: 14vw;
+}
+.fig2 {
+	position: absolute;
+	left: 65vw;
+	height: 20vh;
+}
+.fig3 {
+	position: absolute;
+	top: 5vh;
+	left: 85vw;
+}
+.button {
+	position: absolute;
+	top: 2vh;
+	left: 2vh;
+	height: 8vh;
+}
+.exit {
+	position: absolute;
+	left: 4vw;
+	top: 4.5vh;
+	height: 2.5vh;
 }
