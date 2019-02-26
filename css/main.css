@@ -1,3 +1,9 @@
+body {
+	background-image: url('../img/background.png');
+	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
 .header {
 	height: 20vh;
 	background-image: url('../img/header_bg.png');
@@ -37,4 +43,86 @@
 	left: 4vw;
 	top: 4.5vh;
 	height: 2.5vh;
+}
+
+.left {
+	height: 80vh;
+	width: 15vw;
+}
+
+.fig4 {
+	position: absolute;
+	top: 21vh;
+	left: 2vw;
+	height: 25vh;
+}
+
+.fig5 {
+	position: absolute;
+	top: 47vh;
+	left: 2vw;
+	height: 25vh;
+}
+
+.fig6 {
+	position: absolute;
+	top: 73vh;
+	left: 2vw;
+	height: 25vh;
+}
+
+.fig7 {
+	position: absolute;
+	width: 6vw;
+	top: 25vh;
+	left: 4vw;
+}
+
+.fig8 {
+	position: absolute;
+	width: 7vw;
+	top: 52vh;
+	left: 4vw;
+}
+
+.fig9 {
+	position: absolute;
+	width: 8vw;
+	top: 79vh;
+	left: 3.5vw;
+}
+
+.fig10 {
+	position: absolute;
+	width: 12vw;
+	top: 26vh;
+	left: 1.5vw;
+}
+
+.fig11 {
+	position: absolute;
+	width: 15vw;
+	top: 76vh;
+	left: 0vw;
+}
+
+.fig12 {
+	position: absolute;
+	width: 9vw;
+	top: 34vh;
+	left: 2.5vw;
+}
+
+.fig13 {
+	position: absolute;
+	width: 8vw;
+	top: 55vh;
+	left: 3.5vw;
+}
+
+.fig14 {
+	position: absolute;
+	width: 8vw;
+	top: 84vh;
+	left: 3vw;
 }
