@@ -31,15 +31,9 @@ body {
 
 .fig1 {
 	position: absolute;
-	left: 4.5vw;
+	left: 4vw;
 	top: 2.5vh;	
 	height: 20vh;
-}
-
-.halo {
-	top: -1vh;
-	position: absolute;
-	width: 14vw;
 }
 
 .fig2 {
@@ -50,169 +44,114 @@ body {
 
 .fig3 {
 	position: absolute;
-	top: 5vh;
-	left: 85vw;
-}
-
-.button {
-	position: absolute;
-	top: 2vh;
-	left: 2vh;
-	height: 8vh;
-}
-
-.exit {
-	position: absolute;
-	left: 4vw;
-	top: 4.5vh;
-	height: 2.5vh;
+	width: 40vw;
+	top: 10vh;
+	left: 15vw;
 }
 
 .fig4 {
 	position: absolute;
-	top: 21vh;
-	left: 2vw;
-	height: 25vh;
+	width: 40vw;
+	top: 1vh;
+	left: 15vw;
+}
+
+.exit {
+	position: absolute;
+	top: 7vh;
+	left: 88vw;
+	width: 15vh;
 }
 
 .fig5 {
 	position: absolute;
-	top: 47vh;
-	left: 2vw;
-	height: 25vh;
+	height: 23vh;
+	top: 22vh;
+	left: 4vw;
 }
 
 .fig6 {
 	position: absolute;
-	top: 73vh;
-	left: 2vw;
-	height: 25vh;
+	height: 23vh;
+	top: 47vh;
+	left: 4vw;
 }
 
 .fig7 {
 	position: absolute;
-	width: 6vw;
-	top: 25vh;
+	height: 23vh;
+	top: 72vh;
 	left: 4vw;
-}
-
-.fig8 {
-	position: absolute;
-	width: 7vw;
-	top: 52vh;
-	left: 4vw;
-}
-
-.fig9 {
-	position: absolute;
-	width: 8vw;
-	top: 79vh;
-	left: 3.5vw;
-}
-
-.fig10 {
-	position: absolute;
-	width: 12vw;
-	top: 26vh;
-	left: 1.5vw;
-}
-
-.fig11 {
-	position: absolute;
-	width: 15vw;
-	top: 76vh;
-	left: 0vw;
-}
-
-.fig12 {
-	position: absolute;
-	width: 9vw;
-	top: 34vh;
-	left: 2.5vw;
-}
-
-.fig13 {
-	position: absolute;
-	width: 8vw;
-	top: 55vh;
-	left: 3.5vw;
-}
-
-.fig14 {
-	position: absolute;
-	width: 8vw;
-	top: 84vh;
-	left: 3vw;
 }
 
 .fig15 {
 	position: absolute;
-	width: 12vw;
+	height: 75vh;
 	top: 23vh;
-	left: 86vw;
+	left: 85vw;
 }
 
 .fig16 {
 	position: absolute;
-	width: 9vw;
+	width: 7vw;
 	top: 30vh;
-	left: 87.5vw;
+	left: 87vw;
 }
 
 .fig17 {
 	position: absolute;
-	width: 10vw;
+	width: 8vw;
 	top: 35vh;
-	left: 87.2vw;
+	left: 86.5vw;
 }
 
 .fig18 {
 	position: absolute;
-	width: 10vw;
+	width: 8vw;
 	top: 40vh;
-	left: 87.2vw;
+	left: 86.5vw;
 }
 
 .fig19 {
 	position: absolute;
-	width: 10vw;
+	width: 8vw;
 	top: 45vh;
-	left: 87.2vw;
+	left: 86.5vw;
 }
 
 .fig20 {
 	position: absolute;
-	width: 10vw;
+	width: 8vw;
 	top: 50vh;
-	left: 87.2vw;
+	left: 86.5vw;
 }
 
 .fig21 {
 	position: absolute;
-	width: 6vw;
+	width: 5vw;
 	top: 36.2vh;
-	left: 89.2vw;
+	left: 88vw;
 }
 
 .fig22 {
 	position: absolute;
-	width: 6vw;
+	width: 5vw;
 	top: 41.2vh;
-	left: 89.2vw;
+	left: 88vw;
 }
 
 .fig23 {
 	position: absolute;
-	width: 6vw;
+	width: 5vw;
 	top: 46.2vh;
-	left: 89.2vw;
+	left: 88vw;
 }
 
 .fig24 {
 	position: absolute;
-	width: 6vw;
+	width: 5vw;
 	top: 51.2vh;
-	left: 89.2vw;
+	left: 88vw;
 }
 
 .fig25 {
@@ -227,20 +166,6 @@ body {
 	width: 40vw;
 	top: 22vh;
 	left: 20vw;
-}
-
-.fig27 {
-	position: absolute;
-	width: 40vw;
-	top: 10vh;
-	left: 15vw;
-}
-
-.fig28 {
-	position: absolute;
-	width: 40vw;
-	top: 1vh;
-	left: 15vw;
 }
 
 .fig29 {
