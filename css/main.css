@@ -161,12 +161,12 @@ body {
 	left: 18vw;
 }
 
-.fig26 {
+/*.fig26 {
 	position: absolute;
 	width: 40vw;
 	top: 22vh;
 	left: 20vw;
-}
+}*/
 
 .fig29 {
 	position: absolute;
@@ -215,4 +215,34 @@ body {
 	width: 12vw;
 	top: 92vh;
 	left: 70vw;
+}
+
+.center_top {
+	
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+	background-color: brown;
+	position: absolute;
+	width: 55vw;
+	height: 30vh;
+	top: 25vh;
+	left: 22vw;
+}
+
+.center_bottom {
+
+	text-align: center;
+	display: flex;
+    justify-content:center;
+    flex-direction:column;
+
+	background-color: brown;
+	position: absolute;
+	width: 55vw;
+	height: 30vh;
+	top: 58vh;
+	left: 22vw;
 }
