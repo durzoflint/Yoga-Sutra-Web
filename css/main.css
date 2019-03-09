@@ -1,0 +1,260 @@
+body {
+	background-image: url('../img/background.png');
+	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.header {
+	height: 20vh;
+	background-image: url('../img/header_bg.png');
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.left {
+	float: left;
+	height: 80vh;
+	width: 15vw;
+}
+
+.center {
+	float: left;
+	height: 80vh;
+	width: 70vw;	
+}
+
+.right {
+	float: left;
+	width: 15vw;
+	height: 80vh;
+}
+
+.fig1 {
+	position: absolute;
+	left: 4vw;
+	top: 2.5vh;	
+	height: 20vh;
+}
+
+.fig2 {
+	position: absolute;
+	left: 65vw;
+	height: 20vh;
+}
+
+.fig3 {
+	position: absolute;
+	width: 40vw;
+	top: 10vh;
+	left: 15vw;
+}
+
+.fig4 {
+	position: absolute;
+	width: 40vw;
+	top: 1vh;
+	left: 15vw;
+}
+
+.exit {
+	position: absolute;
+	top: 7vh;
+	left: 88vw;
+	width: 15vh;
+}
+
+.fig5 {
+	position: absolute;
+	height: 23vh;
+	top: 22vh;
+	left: 4vw;
+}
+
+.fig6 {
+	position: absolute;
+	height: 23vh;
+	top: 47vh;
+	left: 4vw;
+}
+
+.fig7 {
+	position: absolute;
+	height: 23vh;
+	top: 72vh;
+	left: 4vw;
+}
+
+.fig15 {
+	position: absolute;
+	height: 75vh;
+	top: 23vh;
+	left: 85vw;
+}
+
+.fig16 {
+	position: absolute;
+	width: 7vw;
+	top: 30vh;
+	left: 87vw;
+}
+
+.fig17 {
+	position: absolute;
+	width: 8vw;
+	top: 35vh;
+	left: 86.5vw;
+}
+
+.fig18 {
+	position: absolute;
+	width: 8vw;
+	top: 40vh;
+	left: 86.5vw;
+}
+
+.fig19 {
+	position: absolute;
+	width: 8vw;
+	top: 45vh;
+	left: 86.5vw;
+}
+
+.fig20 {
+	position: absolute;
+	width: 8vw;
+	top: 50vh;
+	left: 86.5vw;
+}
+
+.fig21 {
+	position: absolute;
+	width: 5vw;
+	top: 36.2vh;
+	left: 88vw;
+}
+
+.fig22 {
+	position: absolute;
+	width: 5vw;
+	top: 41.2vh;
+	left: 88vw;
+}
+
+.fig23 {
+	position: absolute;
+	width: 5vw;
+	top: 46.2vh;
+	left: 88vw;
+}
+
+.fig24 {
+	position: absolute;
+	width: 5vw;
+	top: 51.2vh;
+	left: 88vw;
+}
+
+.fig25 {
+	position: absolute;
+	width: 12vw;
+	top: 92vh;
+	left: 18vw;
+}
+
+/*.fig26 {
+	position: absolute;
+	width: 40vw;
+	top: 22vh;
+	left: 20vw;
+}*/
+
+.fig29 {
+	position: absolute;
+	width: 6vw;
+	top: 93.5vh;
+	left: 21vw;
+}
+
+.fig30 {
+	position: absolute;
+	width: 4vw;
+	top: 93.5vh;
+	left: 39vw;
+}
+
+.fig31 {
+	position: absolute;
+	width: 5vw;
+	top: 93.5vh;
+	left: 55.5vw;
+}
+
+.fig32 {
+	position: absolute;
+	width: 3.5vw;
+	top: 93.5vh;
+	left: 74vw;
+}
+
+.fig33 {
+	position: absolute;
+	width: 12vw;
+	top: 92vh;
+	left: 35vw;
+}
+
+.fig34 {
+	position: absolute;
+	width: 12vw;
+	top: 92vh;
+	left: 52vw;
+}
+
+.fig35 {
+	position: absolute;
+	width: 12vw;
+	top: 92vh;
+	left: 70vw;
+}
+
+.center_top {
+	
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+	background-color: brown;
+	position: absolute;
+	width: 55vw;
+	height: 30vh;
+	top: 25vh;
+	left: 22vw;
+}
+
+.center_bottom {
+
+	text-align: center;
+	display: flex;
+    justify-content:center;
+    flex-direction:column;
+
+	background-color: brown;
+	position: absolute;
+	width: 55vw;
+	height: 30vh;
+	top: 58vh;
+	left: 22vw;
+}
+
+#one {
+	color: white;
+}
+
+#two {
+	color: white;
+}
+
+#three {
+	color: white;
+}
