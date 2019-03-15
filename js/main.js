@@ -4,7 +4,10 @@ var verserNumber = 0;
 var chapters;
 
 function recite() {
+    var fileName = "1.1 A.mp3";
+
     var x = document.getElementById("audio");
+    x.innerHTML = "<source src=\"audio/" + fileName + "\" type=\"audio/mpeg\">";
     x.play();
 }
 
@@ -21,6 +24,7 @@ function previous() {
 }
 
 function switchChapter(number) {
+    verserNumber = 0;
     chapterNumber = number - 1;
     load();
 }
@@ -29,7 +33,6 @@ function load() {
     var node = chapters[chapterNumber];
     var verseNode = node.getElementsByTagName("chapter_X20_" + (chapterNumber + 1));
     chapterLength = verseNode.length;
-    console.log("chapter length: " + chapterLength + "\nverse: " + verserNumber);
     var verse = verseNode[verserNumber].getElementsByTagName("verse")[0];
     document.getElementById("one").innerText = verse.innerHTML;
     var verse = verseNode[verserNumber].getElementsByTagName("translation")[0];
