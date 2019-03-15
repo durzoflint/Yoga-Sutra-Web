@@ -4,10 +4,19 @@ var verserNumber = 0;
 var chapters;
 
 function recite() {
-    var fileName = "1.1 A.mp3";
+    //var fileName = "1.1 C.mp3";
+    var index = (chapterNumber + 1) + "." + (verserNumber + 1) + " ";
+    var sourceFiles = "";
+    /*for (var i = 65; i <= 90; i++) {
+        var name = index + String.fromCharCode(i) + ".mp3";
+        sourceFiles = sourceFiles + "<source src=\"audio/" + name + "\" type=\"audio/mpeg\">" + "\n";
+    }*/
+    var name = index + "A.mp3";
+    sourceFiles = "<source src=\"audio/" + name + "\" type=\"audio/mpeg\">";
 
-    var x = document.getElementById("audio");
-    x.innerHTML = "<source src=\"audio/" + fileName + "\" type=\"audio/mpeg\">";
+    //Todo: put the creation in load initialise part. The make sure the audio element plays one audio at a time
+    var x = document.createElement("AUDIO");
+    x.innerHTML = sourceFiles;
     x.play();
 }
 
@@ -57,19 +66,4 @@ function loadDoc() {
     };
     xhttp.open("GET", "data.xml", true);
     xhttp.send();
-}
-
-function myFunction(xml) {
-    parser = new DOMParser();
-    xmlDoc = parser.parseFromString(xml.responseText, "text/xml");
-    var chapters = xmlDoc.getElementsByTagName("chapters");
-    for(var i = 0;i < chapters.length; i++) {
-        var node = chapters[i];
-        var verseNode = node.getElementsByTagName("chapter_X20_" + (i+1));
-        
-        for(var j = 0; j<verseNode.length; j++) {
-            var verse = verseNode[j].getElementsByTagName("verse")[0];
-            console.log(verse.innerHTML);
-        }
-    }
 }
