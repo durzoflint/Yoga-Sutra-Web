@@ -218,13 +218,16 @@ body {
 }
 
 .center_top {
-	
 	text-align: center;
 	display: flex;
     justify-content: center;
     flex-direction: column;
 
-	background-color: brown;
+	/*background-color: brown;*/
+	background-image: url(../img/top.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 24px;
 	position: absolute;
 	width: 55vw;
 	height: 30vh;
@@ -233,13 +236,16 @@ body {
 }
 
 .center_bottom {
-
 	text-align: center;
 	display: flex;
     justify-content:center;
     flex-direction:column;
 
-	background-color: brown;
+	/*background-color: brown;*/
+	background-image: url(../img/bottom.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 24px;
 	position: absolute;
 	width: 55vw;
 	height: 30vh;
@@ -249,14 +255,17 @@ body {
 
 #one {
 	color: white;
+	font-size: 18px;
 }
 
 #two {
 	color: white;
+	font-size: 18px;
 }
 
 #three {
 	color: white;
+	font-size: 18px;
 }
 
 /* The Modal (background) */
