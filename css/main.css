@@ -1,7 +1,184 @@
 body {
+	overflow: hidden;
 	background-image: url('../img/background.png');
 	background-repeat: no-repeat;
   	background-size: cover;
+}
+
+.verticle-bottom-center {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.verticle-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#intro {
+	display: none;
+	height: 100%;
+	width: 100%;
+}
+
+#intro-text {
+	background-image: url(../img/top.png);
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	padding: 40px;
+  	color: white;
+}
+
+#intro-text p {
+	margin: 0;
+	font-size: 20px;
+}
+
+#chapter-list {
+	display: none;
+}
+
+.chapter-bg {
+	background-image: url(../img/top.png);
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	height: 50vh;
+  	width: 30vw;
+  	position: absolute;
+  	top: 25vh;
+  	left: 35vw;
+}
+
+.chap-title {
+	position: absolute;
+	width: 20vw;
+	top: -10vh;
+	left: 5vw;
+}
+
+.chap1-bg {
+	position: absolute;
+	width: 15vw;
+	top: 5vh;
+	left: 8vw;
+}
+
+.chap2-bg {
+	position: absolute;
+	width: 15vw;
+	top: 15vh;
+	left: 8vw;
+}
+
+.chap3-bg {
+	position: absolute;
+	width: 15vw;
+	top: 25vh;
+	left: 8vw;
+}
+
+.chap4-bg {
+	position: absolute;
+	width: 15vw;
+	top: 35vh;
+	left: 8vw;
+}
+
+.chap1 {
+	cursor: pointer;
+	position: absolute;
+	width: 9vw;
+	top: 7vh;
+	left: 11vw;
+}
+
+.chap2 {
+	cursor: pointer;
+	position: absolute;
+	width: 9vw;
+	top: 17vh;
+	left: 11vw;
+}
+
+.chap3 {
+	cursor: pointer;
+	position: absolute;
+	width: 9vw;
+	top: 27vh;
+	left: 11vw;
+}
+
+.chap4 {
+	cursor: pointer;
+	position: absolute;
+	width: 9vw;
+	top: 37vh;
+	left: 11vw;
+}
+
+#player {
+	display: none;
+}
+
+#credits {
+	display: none;
+	text-align: center;
+	height: 100vh;
+	padding-top: 93vh;
+	padding-left: 32vw;
+	position: absolute;
+}
+
+.credits-heading {
+	margin-top: 40px;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.credits-text {
+	font-size: 18px;
+}
+
+#buttons {
+	display: none;
+}
+
+.main-menu {
+	position: absolute;
+	width: 15vw;
+	top: 50vh;
+	left: 30vw;
+}
+
+.close-window {
+	position: absolute;
+	width: 15vw;
+	top: 50vh;
+	left: 55vw;
+}
+
+.main-menu-text {
+	cursor: pointer;
+	color: white;
+	font-size: 22px;
+	position: absolute;
+	width: 15vw;
+	top: 52vh;
+	left: 33.5vw;
+}
+
+.close-window-text {
+	cursor: pointer;
+	color: white;
+	font-size: 22px;
+	position: absolute;
+	width: 15vw;
+	top: 52vh;
+	left: 57.5vw;
 }
 
 .header {
@@ -57,6 +234,7 @@ body {
 }
 
 .exit {
+	cursor: pointer;
 	position: absolute;
 	top: 7vh;
 	left: 88vw;
@@ -64,6 +242,7 @@ body {
 }
 
 .fig5 {
+	cursor: pointer;
 	position: absolute;
 	height: 23vh;
 	top: 22vh;
@@ -71,6 +250,7 @@ body {
 }
 
 .fig6 {
+	cursor: pointer;
 	position: absolute;
 	height: 23vh;
 	top: 47vh;
@@ -78,6 +258,7 @@ body {
 }
 
 .fig7 {
+	cursor: pointer;
 	position: absolute;
 	height: 23vh;
 	top: 72vh;
@@ -86,9 +267,25 @@ body {
 
 .fig15 {
 	position: absolute;
-	height: 75vh;
+	height: 73vh;
+	top: 21vh;
+	left: 85.4vw;
+}
+
+.fire-recite {
+	display: none;
+	position: absolute;
+	height: 8vh;
 	top: 23vh;
-	left: 85vw;
+	left: 3.3vw;
+}
+
+.fire-teach-me {
+	display: none;
+	position: absolute;
+	height: 8vh;
+	top: 47vh;
+	left: 2.5vw;
 }
 
 .fig16 {
@@ -127,6 +324,7 @@ body {
 }
 
 .fig21 {
+	cursor: pointer;
 	position: absolute;
 	width: 5vw;
 	top: 36.2vh;
@@ -134,6 +332,7 @@ body {
 }
 
 .fig22 {
+	cursor: pointer;
 	position: absolute;
 	width: 5vw;
 	top: 41.2vh;
@@ -141,6 +340,7 @@ body {
 }
 
 .fig23 {
+	cursor: pointer;
 	position: absolute;
 	width: 5vw;
 	top: 46.2vh;
@@ -148,6 +348,7 @@ body {
 }
 
 .fig24 {
+	cursor: pointer;
 	position: absolute;
 	width: 5vw;
 	top: 51.2vh;
@@ -169,6 +370,7 @@ body {
 }*/
 
 .fig29 {
+	cursor: pointer;
 	position: absolute;
 	width: 6vw;
 	top: 93.5vh;
@@ -176,6 +378,7 @@ body {
 }
 
 .fig30 {
+	cursor: pointer;
 	position: absolute;
 	width: 4vw;
 	top: 93.5vh;
@@ -183,6 +386,7 @@ body {
 }
 
 .fig31 {
+	cursor: pointer;
 	position: absolute;
 	width: 5vw;
 	top: 93.5vh;
@@ -190,6 +394,7 @@ body {
 }
 
 .fig32 {
+	cursor: pointer;
 	position: absolute;
 	width: 3.5vw;
 	top: 93.5vh;
@@ -217,22 +422,38 @@ body {
 	left: 70vw;
 }
 
+.chapter-intro {
+	background-image: url(../img/top.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 40px;
+	position: absolute;
+	width: 58vw;
+	height: 63vh;
+	top: 25vh;
+	left: 18vw;
+}
+
+#chapter-intro-text {
+	color: white;
+	font-size: 20px;
+}
+
 .center_top {
 	text-align: center;
 	display: flex;
     justify-content: center;
     flex-direction: column;
-
-	/*background-color: brown;*/
 	background-image: url(../img/top.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 24px;
+	padding: 30px;
 	position: absolute;
 	width: 55vw;
 	height: 30vh;
 	top: 25vh;
 	left: 22vw;
+	display: none;
 }
 
 .center_bottom {
@@ -240,68 +461,125 @@ body {
 	display: flex;
     justify-content:center;
     flex-direction:column;
-
-	/*background-color: brown;*/
 	background-image: url(../img/bottom.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 24px;
+	padding: 30px;
 	position: absolute;
 	width: 55vw;
 	height: 30vh;
 	top: 58vh;
 	left: 22vw;
+	display: none;
+}
+
+.center_full {
+	text-align: center;
+	display: flex;
+    justify-content:center;
+    flex-direction:column;
+	background-image: url(../img/top.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 30px;
+	position: absolute;
+	width: 62vw;
+	height: 65vh;
+	top: 25vh;
+	left: 18vw;
+	display: none;
+}
+
+.tell-me-more-back {
+	display: none;
+	position: absolute;
+	width: 12vw;
+	top: 92vh;
+	left: 70vw;
+}
+
+.tell-me-more-back-button {
+	cursor: pointer;
+	color: white;
+	font-size: 24px;
+	display: none;
+	position: absolute;
+	width: 3.5vw;
+	top: 93vh;
+	left: 74vw;
 }
 
 #one {
-	color: white;
-	font-size: 18px;
+	margin-top: 30px;
+	color: yellow;
+	font-size: 20px;
 }
 
 #two {
-	color: white;
-	font-size: 18px;
+	margin-top: 15px;
+	color: steelblue;
+	font-size: 20px;
 }
 
 #three {
 	color: white;
+	font-size: 20px;
+}
+
+#four {
+	color: white;
+	font-size: 20px;
+}
+
+#project-title {
+	display: none;
+	text-align: center;
+}
+
+.project-heading {
+	font-weight: bold;
+	font-size: 24px;
+	margin: 0;
+}
+
+.project-text {
 	font-size: 18px;
+	margin: 0;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+.logo {
 }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+.slider {
+	position: absolute;
+	top: 96vh;
+	width: 14vw !important;
+	height: 10px;
+	left: 84vw;
+	-webkit-appearance: none;
+	border-radius: 5px;
+	background: brown;
+	outline: none;
 }
 
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 40px;
+	height: 30px;
+	border: 0;
+	background: url('../img/fig2.png');
+	background-repeat: no-repeat;
+  	background-size: cover;
+	cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.slider::-moz-range-thumb {
+	width: 20px;
+	height: 20px;
+	border: 0;
+	background: url('../img/fig2.png');
+	background-repeat: no-repeat;
+  	background-size: cover;
+	cursor: pointer;
 }
