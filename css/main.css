@@ -26,6 +26,7 @@ body {
 }
 
 #intro-text {
+	font-family: 'Dancing Script', cursive;
 	background-image: url(../img/top.png);
 	background-repeat: no-repeat;
   	background-size: cover;
@@ -129,7 +130,7 @@ body {
 	text-align: center;
 	height: 100vh;
 	padding-top: 93vh;
-	padding-left: 32vw;
+	padding-left: 25vw;
 	position: absolute;
 }
 
@@ -267,8 +268,8 @@ body {
 
 .fig15 {
 	position: absolute;
-	height: 73vh;
-	top: 21vh;
+	height: 72vh;
+	top: 20.8vh;
 	left: 85.4vw;
 }
 
@@ -286,6 +287,14 @@ body {
 	height: 8vh;
 	top: 47vh;
 	left: 2.5vw;
+}
+
+.fire-tell-me-more {
+	display: none;
+	position: absolute;
+	height: 8vh;
+	top: 72.5vh;
+	left: 1.9vw;
 }
 
 .fig16 {
@@ -471,6 +480,7 @@ body {
 	top: 58vh;
 	left: 22vw;
 	display: none;
+	overflow-y: auto;
 }
 
 .center_full {
@@ -510,20 +520,24 @@ body {
 }
 
 #one {
+	font-family: 'Dancing Script', cursive;
 	margin-top: 30px;
 	color: yellow;
-	font-size: 20px;
+	font-size: 24px;
 }
 
 #two {
+	font-family: 'Dancing Script', cursive;
 	margin-top: 15px;
 	color: steelblue;
-	font-size: 20px;
+	font-size: 28px;
 }
 
 #three {
+	font-family: 'Dancing Script', cursive;
 	color: white;
-	font-size: 20px;
+	font-size: 28px;
+	margin-top: 15px;
 }
 
 #four {
@@ -540,11 +554,13 @@ body {
 	font-weight: bold;
 	font-size: 24px;
 	margin: 0;
+	font-family: 'Dancing Script', cursive;
 }
 
 .project-text {
 	font-size: 18px;
 	margin: 0;
+	font-family: 'Dancing Script', cursive;
 }
 
 .logo {
@@ -552,7 +568,7 @@ body {
 
 .slider {
 	position: absolute;
-	top: 96vh;
+	top: 94vh;
 	width: 14vw !important;
 	height: 10px;
 	left: 84vw;
@@ -582,4 +598,105 @@ body {
 	background-repeat: no-repeat;
   	background-size: cover;
 	cursor: pointer;
+}
+
+.volume-text {
+	color: brown;
+	font-size: 24px;
+	position: absolute;
+	top: 95vh;
+	height: 10px;
+	left: 88.5vw;
+}
+
+.fire-chap1 {
+	display: none;
+	position: absolute;
+	width: 5vw;
+	top: 33vh;
+	left: 85vw;
+}
+
+.fire-chap2 {
+	display: none;
+	position: absolute;
+	width: 5vw;
+	top: 38vh;
+	left: 85vw;
+}
+
+.fire-chap3 {
+	display: none;
+	position: absolute;
+	width: 5vw;
+	top: 43vh;
+	left: 85vw;
+}
+
+.fire-chap4 {
+	display: none;
+	position: absolute;
+	width: 5vw;
+	top: 48vh;
+	left: 85vw;
+}
+
+.fire-back {
+	display: none;
+	position: absolute;
+	width: 5vw;
+	top: 91vh;
+	left: 69vw;
+}
+
+.audio-resume {
+	display: none;
+	cursor: pointer;
+	color: white;
+	font-size: 24px;
+	position: absolute;
+	width: 3.5vw;
+	top: 93vh;
+	left: 38vw;
+}
+
+.exit-prompt {
+	display: none;
+}
+
+.exit-text {
+	position: absolute;
+	top: 20vh;
+	left: 36vw;
+	font-size: 30px;
+}
+
+.exit-yes {
+	position: absolute;
+	height: 7vh;
+	top: 40vh;
+	left: 36vw;
+}
+
+.exit-no {
+	position: absolute;
+	height: 7vh;
+	top: 40vh;
+	left: 54vw;
+}
+
+.exit-text-yes {
+	cursor: pointer;
+	color: white;
+	position: absolute;
+	top: 41.8vh;
+	left: 41vw;
+}
+
+.exit-text-no {
+	cursor: pointer;
+	color: white;
+	position: absolute;
+	top: 41.8vh;
+	left: 59vw;
 }

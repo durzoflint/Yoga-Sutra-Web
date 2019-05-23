@@ -7,6 +7,9 @@ var prevAudio = "";
 var prevMode = "";
 var fireRecite = document.getElementsByClassName("fire-recite")[0];
 var fireTeachMe = document.getElementsByClassName("fire-teach-me")[0];
+var fireTellMeMore = document.getElementsByClassName("fire-tell-me-more")[0];
+var fireBack = document.getElementsByClassName("fire-back")[0];
+var prevChapIntroStyle;
 
 var audio = document.getElementById("audio");
 audio.onended = function() {
@@ -67,11 +70,13 @@ function selectChapter(number) {
 function tellMeMore() {
     prevMode = currentMode;
     currentMode = "tellMeMore";
+    fireTellMeMore.style.display = "block";
+    fireBack.style.display = "block";
     fireRecite.style.display = "none";
     fireTeachMe.style.display = "none";
 
     prevAudio = audio.src;
-    pause();
+    audio.pause();
     audio.src = "audio/HINDOLA_4.mp3";
     audio.play();
 
@@ -109,13 +114,15 @@ function tellMeMore() {
 }
 
 function backFromTellMeMore() {
+    fireTellMeMore.style.display = "none";
+    fireBack.style.display = "none";
     currentMode = prevMode;
     if (currentMode == "recite")
         fireRecite.style.display = "block";
     else
         fireTeachMe.style.display = "block";
 
-    pause();
+    audio.pause();
     audio.src = prevAudio;
     audio.play();
 
@@ -154,12 +161,22 @@ function backFromTellMeMore() {
         currentMode = "not_set";
         fireRecite.style.display = "none";
         fireTeachMe.style.display = "none";
+        fireTellMeMore.style.display = "none";
+        fireBack.style.display = "none";
         showContent();
     }
 }
 
 function pause() {
     audio.pause();
+    document.getElementsByClassName("fig30")[0].style.display = "none";
+    document.getElementsByClassName("audio-resume")[0].style.display = "block";
+}
+
+function resume() {
+    audio.play();
+    document.getElementsByClassName("fig30")[0].style.display = "block";
+    document.getElementsByClassName("audio-resume")[0].style.display = "none";
 }
 
 function repeat() {
@@ -171,6 +188,7 @@ function recite() {
         currentMode = "recite";
         fireRecite.style.display = "block";
         fireTeachMe.style.display = "none";
+        fireTellMeMore.style.display = "none";
         showContent();
     } else if (currentMode == "tellMeMore") {
         backFromTellMeMore();
@@ -179,9 +197,10 @@ function recite() {
     currentMode = "recite";
     fireRecite.style.display = "block";
     fireTeachMe.style.display = "none";
+    fireTellMeMore.style.display = "none";
 
     var index = (chapterNumber + 1) + "." + (verserNumber + 1) + " ";
-    var name = index + "C.mp3";
+    var name = index + "B.mp3";
 
     audio.pause();
     audio.src = "audio/"+name;
@@ -193,6 +212,7 @@ function teachMe() {
         currentMode = "teachMe";
         fireTeachMe.style.display = "block";
         fireRecite.style.display = "none";
+        fireTellMeMore.style.display = "none";
         showContent();
     } else if (currentMode == "tellMeMore") {
         backFromTellMeMore();
@@ -201,6 +221,7 @@ function teachMe() {
     currentMode = "teachMe";
     fireTeachMe.style.display = "block";
     fireRecite.style.display = "none";
+    fireTellMeMore.style.display = "none";
 
     var index = (chapterNumber + 1) + "." + (verserNumber + 1) + " ";
     var name = index + "A.mp3";
@@ -242,6 +263,47 @@ function switchChapter(number) {
     if (number > 0) {
         verserNumber = 0;
         chapterNumber = number - 1;
+        document.getElementsByClassName("fire-chap1")[0].style.display = "none";
+        document.getElementsByClassName("fire-chap2")[0].style.display = "none";
+        document.getElementsByClassName("fire-chap3")[0].style.display = "none";
+        document.getElementsByClassName("fire-chap4")[0].style.display = "none";
+
+        document.getElementsByClassName("fire-chap"+number)[0].style.display = "block";
+
+        var headerDiv = document.getElementsByClassName("header")[0];
+        headerDiv.style.display = "block";
+        var leftDiv = document.getElementsByClassName("left")[0];
+        leftDiv.style.display = "block";
+        var rightDiv = document.getElementsByClassName("right")[0];
+        rightDiv.style.display = "block";
+
+        if (prevChapIntroStyle == "none") {
+            var centerTopDiv = document.getElementsByClassName("center_top")[0];
+            centerTopDiv.style.display = "block";
+            var centerBottomDiv = document.getElementsByClassName("center_bottom")[0];
+            centerBottomDiv.style.display = "block";
+        }
+
+        var fig25 = document.getElementsByClassName('fig25')[0];
+        fig25.style.display = "block";
+        var fig33 = document.getElementsByClassName('fig33')[0];
+        fig33.style.display = "block";
+        var fig34 = document.getElementsByClassName('fig34')[0];
+        fig34.style.display = "block";
+        var fig29 = document.getElementsByClassName('fig29')[0];
+        fig29.style.display = "block";
+        var fig30 = document.getElementsByClassName('fig30')[0];
+        fig30.style.display = "block";
+        var fig32 = document.getElementsByClassName('fig32')[0];
+        fig32.style.display = "block";
+        var fig35 = document.getElementsByClassName('fig35')[0];
+        fig35.style.display = "block";
+        var fig31 = document.getElementsByClassName('fig31')[0];
+        fig31.style.display = "block";
+
+        var chapterIntroDiv = document.getElementsByClassName("chapter-intro")[0];
+        chapterIntroDiv.style.display = prevChapIntroStyle
+
         loadIntro(number);
     }
 }
@@ -254,6 +316,8 @@ function loadIntro(number) {
     currentMode = "not_set";
     fireTeachMe.style.display = "none";
     fireRecite.style.display = "none";
+    fireTellMeMore.style.display = "none";
+    fireBack.style.display = "none";
 
     var chapterIntroDiv = document.getElementsByClassName("chapter-intro")[0];
     chapterIntroDiv.style.display = "block";
@@ -275,10 +339,8 @@ function loadIntro(number) {
         showCredits();
 }
 
-function showCredits() {
+function showExitPrompt() {
     audio.pause();
-    audio.src = "audio/GHANA RAGA_3.mp3";
-    audio.play();
 
     var headerDiv = document.getElementsByClassName("header")[0];
     headerDiv.style.display = "none";
@@ -310,10 +372,64 @@ function showCredits() {
     fig31.style.display = "none";
 
     var chapterIntroDiv = document.getElementsByClassName("chapter-intro")[0];
+    prevChapIntroStyle = chapterIntroDiv.style.display;
     chapterIntroDiv.style.display = "none";
+    document.getElementsByClassName("exit-prompt")[0].style.display = "block";
+}
+
+function exitYes() {
+    showCredits();
+}
+
+function exitNo() {
+    audio.play();
+
+    var headerDiv = document.getElementsByClassName("header")[0];
+    headerDiv.style.display = "block";
+    var leftDiv = document.getElementsByClassName("left")[0];
+    leftDiv.style.display = "block";
+    var rightDiv = document.getElementsByClassName("right")[0];
+    rightDiv.style.display = "block";
+
+    if (prevChapIntroStyle == "none") {
+        var centerTopDiv = document.getElementsByClassName("center_top")[0];
+        centerTopDiv.style.display = "block";
+        var centerBottomDiv = document.getElementsByClassName("center_bottom")[0];
+        centerBottomDiv.style.display = "block";
+    }
+
+    var fig25 = document.getElementsByClassName('fig25')[0];
+    fig25.style.display = "block";
+    var fig33 = document.getElementsByClassName('fig33')[0];
+    fig33.style.display = "block";
+    var fig34 = document.getElementsByClassName('fig34')[0];
+    fig34.style.display = "block";
+    var fig29 = document.getElementsByClassName('fig29')[0];
+    fig29.style.display = "block";
+    var fig30 = document.getElementsByClassName('fig30')[0];
+    fig30.style.display = "block";
+    var fig32 = document.getElementsByClassName('fig32')[0];
+    fig32.style.display = "block";
+    var fig35 = document.getElementsByClassName('fig35')[0];
+    fig35.style.display = "block";
+    var fig31 = document.getElementsByClassName('fig31')[0];
+    fig31.style.display = "block";
+
+    var chapterIntroDiv = document.getElementsByClassName("chapter-intro")[0];
+    chapterIntroDiv.style.display = prevChapIntroStyle
+    document.getElementsByClassName("exit-prompt")[0].style.display = "none";
+}
+
+function showCredits() {
+    audio.pause();
+    audio.src = "audio/GHANA RAGA_3.mp3";
+    audio.play();
+
+    document.getElementsByClassName("exit-prompt")[0].style.display = "none";
+
     var creditsDiv = document.getElementById("credits");
     creditsDiv.style.display = "block";
-    $("#credits").animate({top: '-2100px'}, 40000, function(){
+    $("#credits").animate({top: '-2400px'}, 40000, function(){
         showButtons();
     });
 }
@@ -356,7 +472,7 @@ function load() {
     }
 
     audio.loop = false;
-    pause();
+    audio.pause();
     if (currentMode == "teachMe")
         teachMe();
     else
