@@ -23,11 +23,7 @@ slider.oninput = function() {
 }
 
 function showIntro() {
-    audio.pause();
-    audio.src = "audio/ABHERI_1.mp3";
-    audio.play();
-
-    var introDiv = document.getElementById("intro");
+    /*var introDiv = document.getElementById("intro");
     introDiv.style.display = "block";
     var introText = document.getElementById("intro-text");
     introText.style.display = "none";
@@ -48,15 +44,27 @@ function showIntro() {
                 }, 5000);
             });
         });
-    }, 5000);
+    }, 5000);*/
+    var video = document.getElementById("video");
+    video.play();
+    video.onended = function() {
+        $(".video-container").fadeOut(1000, function() {
+            showChapterList();
+        });
+    };
 }
 
 function showChapterList() {
+    audio.pause();
+    audio.src = "audio/ABHERI_1.mp3";
+    audio.play();
+
     var buttonsDiv = document.getElementById("buttons");
     buttonsDiv.style.display = "none";
 
-    var chapterListDiv = document.getElementById("chapter-list");
-    chapterListDiv.style.display = "block";
+    //var chapterListDiv = document.getElementById("chapter-list");
+    $("#chapter-list").fadeIn(1000);
+    //chapterListDiv.style.display = "block";
 }
 
 function selectChapter(number) {

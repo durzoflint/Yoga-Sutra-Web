@@ -19,6 +19,17 @@ body {
 	transform: translate(-50%, -50%);
 }
 
+.video-container {
+	height: 100vh;
+	width: 100vw;
+	background-color: black;
+}
+
+#video {
+	height: 100vh;
+	width: 100%;
+}
+
 #intro {
 	display: none;
 	height: 100%;
